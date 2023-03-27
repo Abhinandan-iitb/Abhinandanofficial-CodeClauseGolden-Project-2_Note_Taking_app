@@ -1,0 +1,59 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Roboto+Slab:wght@300;400;500&display=swap');
+
+/* Icon */
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+:root {
+  --bg: #2f2e37;
+  --bg-dark: #191825;
+  --text: #fefefe;
+  --muted-text: #313243;
+  --primary: #2b34be;
+  --primary-tint: #97c2ff;
+  --danger: #fb420f;
+  --danger-tint: #ffc3b2;
+  --warning: #fb950f;
+  --warning-tint: #fcffdf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: 'Alkatra', cursive; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+i {
+  display: grid;
+  place-items: center;
+}
+
+.warning {
+  background: var(--warning-tint);
+  color: var(--warning);
+}
+
+.danger {
+  background: var(--danger-tint);
+  color: var(--danger);
+}
+
+
+@media screen and (max-width:700px) {
+  html {
+    font-size: 55%;
+  }
+}

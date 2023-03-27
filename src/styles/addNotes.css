@@ -1,0 +1,81 @@
+.add-notes {
+    padding: 2rem;
+}
+
+.add-notes .section-heading {
+    font-size: 2rem;
+}
+
+.add-notes .section-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    max-width: 80rem;
+    background: var(--bg-dark);
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.section-body .message-box {
+    background: var(--warning-tint);
+    color: var(--warning);
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    border-radius: 1rem;
+    transition: .3s ease;
+}
+
+.section-body .add-notes-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.add-notes-form input,
+.add-notes-form textarea {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: 1px solid var(--primary-tint);
+    color: var(--text);
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.add-notes-form input:focus,
+.add-notes-form textarea:focus {
+    outline: 1px solid var(--primary);
+}
+
+.add-notes-form textarea {
+    resize: none;
+    height: 15rem;
+    padding-top: 2rem;
+}
+
+.add-notes-form button {
+    display: flex;
+    align-self: flex-end;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    background: var(--primary-tint);
+}
+
+.add-notes-form button:hover {
+    background: var(--primary);
+    color: var(--text);
+}
